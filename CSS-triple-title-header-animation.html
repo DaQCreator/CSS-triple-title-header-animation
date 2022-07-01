@@ -12,6 +12,12 @@
    padding: 0;
   }
 
+  body {
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    width: 100vw;
+    height: 100vh;
+  }
+
   section {
    position: absolute;
    width: 80%;
@@ -19,16 +25,19 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background: linear-gradient(318deg, rgba(42,40,84,1) 0%, rgba(81,81,189,1) 35%, rgba(107,230,255,1) 100%);
+   /* background: linear-gradient(318deg, rgba(42,40,84,0.7) 0%, rgba(81,81,189,0.7) 35%, rgba(107,230,255,0.7) 70%); */
+   /* box-shadow: 0 0 0 3px rgba(42, 40, 84, 0.5), 4px 4px 12px rgba(0, 0, 0, 0.8); */
    color: white;
    overflow: hidden;
    border-radius: 10px;
-   box-shadow: 0 0 0 3px rgba(42, 40, 84, 0.5), 4px 4px 12px rgba(0, 0, 0, 0.8);
-   
+   background: rgba( 255, 255, 255, 0.15 );
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
+   backdrop-filter: blur( 2px );
   }
 
   h1 {
     position: absolute;
+    color: indigo;
     top: 50%;
     left: 0;
     width: 100%;
