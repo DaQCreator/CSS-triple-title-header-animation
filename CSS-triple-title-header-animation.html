@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Triple title header animation</title>
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+  }
+
+  section {
+   position: absolute;
+   width: 80%;
+   height: 50vh;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: linear-gradient(318deg, rgba(42,40,84,1) 0%, rgba(81,81,189,1) 35%, rgba(107,230,255,1) 100%);
+   color: white;
+   overflow: hidden;
+   border-radius: 10px;
+   box-shadow: 0 0 0 3px rgba(42, 40, 84, 0.5), 4px 4px 12px rgba(0, 0, 0, 0.8);
+   
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate(0, -50%);
+    text-align: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: text 15s linear infinite both;
+  }
+
+  /* Both because clear waiting h1's, both hidden content outside box */
+  h1:nth-child(2) {
+    animation-delay: 5s;
+  }
+  h1:nth-child(3) {
+    animation-delay: 10s;
+  }
+
+  /* One animation for each H1 - single H1 is delay up ^   */
+  @keyframes text {
+    0% {
+        transform: translate(100%, -50%)
+    }
+    3% {
+        transform: translate(100%, -50%);
+    }
+    
+    6% {
+        transform: translate(0, -50%);
+    }
+    
+    30% {
+        transform: translate(0, -50%);
+    }
+
+    33% {
+        transform: translate(-100%, -50%);
+    }
+
+    100% {
+        transform: translate(-100%, -50%)
+    }
+
+
+  }
+
+ </style>
+
+</head>
+
+<body>
+ <section>
+  <h1>tanio</h1>
+  <h1>szybko</h1>
+  <h1>jako-tako</h1>
+ </section>
+</body>
+
+</html>
